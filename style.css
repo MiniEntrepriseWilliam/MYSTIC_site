@@ -1,0 +1,78 @@
+/* --- GLOBAL --- */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+}
+
+/* --- BANDE SUPÉRIEURE --- */
+.top-banner {
+    display: flex;
+    flex-wrap: wrap;          /* permet au texte de descendre */
+    align-items: flex-start;  /* évite que le texte écrase le logo */
+    gap: 30px;                /* espace entre logo et texte */
+    padding: 30px;
+    background: white;
+    border-bottom: 4px solid #ddd;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Limite la largeur du texte pour éviter qu'il s'étale trop */
+.about-box {
+    flex: 1;
+    min-width: 280px;
+    max-width: 600px;
+}
+
+.about-box ul {
+    margin-top: -10px;
+}
+
+/* Bouton de téléchargement */
+.download-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #000;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.download-btn:hover {
+    background: #444;
+}
+
+/* --- SECTION BASSE --- */
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.product {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 40%;
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* Image des box */
+.box-img {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
